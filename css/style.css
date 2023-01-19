@@ -1,10 +1,54 @@
+body {
+	background-color: black;
+}
+#page {
+	background-color: var(--background);
+}
+.site-footer {
+	background-color: black;
+}
+.site-footer h2 {
+	
+}
+
+
+
+
+
 .nav-link {
 	color: #639;
 }
 
 
-.row.row-offcanvas.row-offcanvas-left.clearfix {
-  background-color: white;
+.contextual-region.block.block-menu.navigation.menu--account {
+  height: 100%;
+  right: calc(2em + 40px);
+  margin-top: 2em;
+  background-color: #ccb8e0;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  border: 3px solid var(--primary);
+  box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+        20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
+        30px -30px 0 -3px var(--background), 30px -30px var(--orange),
+        40px -40px 0 -3px var(--background), 40px -40px var(--red);
+}
+.navbar-brand {
+  left: 2em;
+  margin-top: 2em;
+  background-color: #ccb8e0;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  border: 3px solid var(--primary);
+  box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+        20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
+        30px -30px 0 -3px var(--background), 30px -30px var(--orange),
+        40px -40px 0 -3px var(--background), 40px -40px var(--red);
+}
+.row.row-offcanvas.row-offcanvas-left.clearfix{
+  background-color: #ccb8e0;
   display: block;
   position: relative;
   width: 70%;
@@ -19,7 +63,7 @@
         40px -40px 0 -3px var(--background), 40px -40px var(--red);
 }
 
-.row.row-offcanvas.row-offcanvas-left.clearfix:hover {
+.row.row-offcanvas.row-offcanvas-left.clearfix:hover, .navbar-brand:hover, .contextual-region.block.block-menu.navigation.menu--account:hover {
   animation: shadow-wave 1s ease infinite;
 }
 
@@ -69,30 +113,20 @@
   
 }
 
-
-
-
-
-
-
-
 :root {
   --primary: #22D2A0;
   --secondary: #192824;
-  --background: #192824;
+  --background: #38135c;
   --green: #1FC11B;
   --yellow: #FFD913;
   --orange: #FF9C55;
   --red: #FF5555;
 } 
 
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+.contextual {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 1;
+	grid-row-end: 4;
 }
 
-body {
-  background-image: radial-gradient(var(--secondary) 30%, var(--background) 30%);
-  background-size: 2px 3px;
-}

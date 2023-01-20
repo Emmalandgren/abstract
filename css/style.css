@@ -123,10 +123,23 @@ body {
   --red: #FF5555;
 } 
 
-.contextual {
-	grid-column-start: 1;
-	grid-column-end: 2;
-	grid-row-start: 1;
-	grid-row-end: 4;
+.site-footer__top  {
+	display: grid;
+	grid-template-areas: 
+	"b a";
 }
 
+.region-footer-fourth {
+	grid-area: a;
+	text-align: left;
+	justify-self: end;
+}
+
+.region-footer-first {
+	grid-area: b;
+	
+}   
+
+.region-footer-second {
+	background-image: url('https://kattguiden.se/wp-content/uploads/2021/04/kattunge-bland-blommor.png');
+}
